@@ -28,8 +28,9 @@ h1 {
 }
 
 .label {
-    font-size: 4rem;
+    font-size: 2rem;
     color: #1f3102;
+    font-style: italic;
 }
 
 .time {
