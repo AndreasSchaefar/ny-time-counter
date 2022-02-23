@@ -11,6 +11,10 @@ const day = hour * 24;
 let newYearDate = " 1/01/2023";
 let newYear = new Date(newYearDate);
 
+function truncate(val) {
+    return Math.trunc(val);
+}
+
 
 function setTime() {
     let currentDate = new Date();
@@ -20,10 +24,10 @@ function setTime() {
     let minDiff = hourDiff % 1 * hour / minute;
     let secDiff = minDiff % 1 * minute / second;
     
-    days.textContent = Math.trunc(dayDiff);
-    hours.textContent = Math.trunc(hourDiff);
-    minutes.textContent = Math.trunc(minDiff);
-    seconds.textContent = Math.trunc(secDiff);
+    days.textContent = truncate(dayDiff);
+    hours.textContent = truncate(hourDiff);
+    minutes.textContent = truncate(minDiff);
+    seconds.textContent = truncate(secDiff);
 }
 
 setInterval(setTime, 1000);
