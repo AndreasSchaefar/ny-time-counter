@@ -28,8 +28,9 @@ h1 {
 }
 
 .label {
-    font-size: 4rem;
+    font-size: 1.5rem;
     color: #1f3102;
+    font-style: italic;
 }
 
 .time {
@@ -42,6 +43,6 @@ h1 {
 .content {
     display: grid;
     grid-template-columns: repeat(4, 250px);
-    grid-gap: 20px;
+    grid-gap: 16px;
     text-align: center;
 }
