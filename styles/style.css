@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: url("/images/background.jpg") no-repeat;
+    background-size: 100%;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+h1 {
+    font-size: 4rem;
+    color: #e01c34;
+}
+
+.label {
+    font-size: 4rem;
+    color: #1f3102;
+}
+
+.time {
+    font-family: 'Akaya Telivigala', sans-serif;
+    font-size: 5rem;
+    color: #5e2b1b;
+}
+
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    grid-gap: 20px;
+    text-align: center;
+}
